@@ -94,7 +94,8 @@ html[data-theme='dark'] .hero__linear_bg{
 
 .unique-tabs{
  padding:0.35rem;
-
+ color: white;
+ border-radius: 10px;
   background:linear-gradient(to right, var(--yui-purple-lighter), #2f172a);
 
 }

@@ -38,7 +38,23 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
+			hideableSidebar: true,
+			autoCollapseSidebarCategories: true,
+			colorMode: {
+				defaultMode: "dark",
+				disableSwitch: false,
+				respectPrefersColorScheme: true,
+			},
+			prism: {
+				theme: lightCodeTheme,
+				darkTheme: darkCodeTheme,
+			},
+			liveCodeBlock: {
+				playgroundPosition: "bottom",
+			},
+
 			navbar: {
+				hideOnScroll: true,
 				title: "YUI",
 				logo: {
 					alt: "My Site Logo",
@@ -103,13 +119,6 @@ const config = {
 					},
 				],
 				copyright: `Copyright © ${new Date().getFullYear()} Yugam UI, Inc.`,
-			},
-			prism: {
-				theme: lightCodeTheme,
-				darkTheme: darkCodeTheme,
-			},
-			liveCodeBlock: {
-				playgroundPosition: "bottom",
 			},
 		}),
 	plugins: ["@docusaurus/theme-live-codeblock"],

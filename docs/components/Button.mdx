@@ -1,6 +1,6 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
+import BrowserWindow from '../../src/components/BrowserWindow/BrowserWindow'
 
 A Normal button user can interact with.
 
@@ -10,7 +10,7 @@ A Normal button user can interact with.
 In Yui-button we provide a prebuilt button web component with diffrent styels  you can play around with.
 The visual styles and behaviou of the button is controled by passing the attribute to the elements.
 
-```html
+```html title="variant danger"
 <yui-button variant="danger">Red button </yui-button>
 ```
 
@@ -78,40 +78,24 @@ function Example() {
 ## Button Basic
 
 ### Variant
+<BrowserWindow>
 
-<Tabs className="unique-tabs">
-
-<TabItem value="danger" label="Danger" default>
-
-```html live
-    <yui-button variant="danger">Danger</yui-button>
+```html 
+<div> 
+<yui-button variant="primary">primary</yui-button>
+<yui-button variant="secondary">secondary</yui-button>
+<yui-button variant="success">success</yui-button>
+<yui-button variant="danger">danger</yui-button>
+<yui-button variant="warning">warning</yui-button>
+<yui-button variant="info">info</yui-button>
+<yui-button variant="light">light</yui-button>
+<yui-button variant="dark">dark</yui-button>
+<yui-button variant="link">link</yui-button>
+</div>
 ```
-  </TabItem>
 
-  <TabItem value="primary" label="Primary" default>
+ </BrowserWindow>
 
-```html live
-    <yui-button variant="primary">Danger</yui-button>
-```
-  </TabItem>
-
-  <TabItem value="warning" label="Warning" default>
-
-```html live
-    <yui-button variant="warning">Danger</yui-button>
-```
-  </TabItem>
-
-  <TabItem value="info" label="Info" default>
-
-```html live
-    <yui-button variant="info">Danger</yui-button>
-```
-  </TabItem>
-
-</Tabs>
-
-<!-- TODO: Find a way to automate this -->
 
 ### Outline
 
